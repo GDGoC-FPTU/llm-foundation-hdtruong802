@@ -467,3 +467,25 @@ if __name__ == "__main__":
         streaming_chatbot()
     except Exception as e:
         print(f"Chatbot failed to start: {e}")
+
+    ## Test different temperature settings with OpenAI GPT-4o
+    # prompt = "Hãy kể cho tôi một sự thật thú vị về Việt Nam."
+
+    # temperatures = [0.0, 0.5, 1.0, 1.5]
+
+    # for temp in temperatures:
+    #     print(f"\n=== Temperature: {temp} ===")
+
+    #     text, latency, usage = call_openai(
+    #         prompt=prompt,
+    #         temperature=temp
+    #     )
+
+    #     print("Response:")
+    #     print(text)
+
+    #     print(f"\nLatency: {latency:.2f}s")
+    #     print(
+    #         f"Tokens: {usage['input_tokens']} in / "
+    #         f"{usage['output_tokens']} out"
+    #     )
